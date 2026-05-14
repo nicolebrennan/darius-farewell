@@ -19,7 +19,7 @@ body { background: #111; display: flex; justify-content: center; align-items: fl
 .bubbles-ticker { height: 440px; overflow: hidden; position: relative; padding: 0 14px; flex-shrink: 0; }
 .bubbles-ticker::before { content:''; position:absolute; top:0; left:0; right:0; height:30px; background:linear-gradient(to bottom,#07080f,transparent); z-index:2; pointer-events:none; }
 .bubbles-ticker::after  { content:''; position:absolute; bottom:0; left:0; right:0; height:30px; background:linear-gradient(to top,#07080f,transparent); z-index:2; pointer-events:none; }
-.ticker-track { display:flex; flex-direction:column; gap:10px; padding:10px 0; animation:ticker-up 108s linear infinite; }
+.ticker-track { display:flex; flex-direction:column; gap:10px; padding:10px 0; animation:ticker-up 144s linear infinite; }
 @keyframes ticker-up { 0%{transform:translateY(0)} 100%{transform:translateY(-50%)} }
 .bubble-card { background:#111827; border:1.5px solid #334155; border-radius:10px; padding:10px 12px; flex-shrink:0; }
 .bubble-name { font-size:11px; color:#ff66cc; letter-spacing:1px; margin-bottom:3px; }
@@ -180,10 +180,16 @@ const SEED = [
   { name: "JZ",       msg: "It's been a delight to get to know your work and to see your strong compass and commitments in action!" },
   { name: "Chelsea",  msg: "Darius, thank you for making the lab a place to think critically about what we build and how we do this in the public interest. I appreciate the way you blend candor and humor! You will be missed! Best wishes in your next adventure!" },
   { name: "Alex",     msg: "Thank you for the creativity, camaraderie and commitment to public interest tech you brought to ASML and BKC!" },
+  { name: "Zoe",      msg: "YOU THE BOMB! Thank you for all your help with Transparency Hub Launch and also all your jokes and also all your top tier karaoke :)" },
   { name: "Sebastian",msg: "It's been so fun to be able to work on some projects with you — we need more Darius-minded entities on the interwebs who want to make it a better place and safer for all those that use this amazing resource! Keep being creative, fun, quirky and curious. Best of luck in your new adventures!" },
   { name: "Alberto",  msg: "Hey Darius! Sad to see you leave. I'm going to miss having conversations about W3C WGs with you. And at least I will get to read your emails and correspondence on the email threads. Please keep in touch and I hope you find your next project after your vacation. Alberto" },
   { name: "Sarah",    msg: "Darius! We haven't been able to work together as much as I would have liked, but it was always great seeing you at our work weeks in-person! I wish you the best in everything that you pursue, in both your personal and professional endeavors." },
   { name: "Jen",      msg: "Darius, though we didn't get to work together much, I always enjoyed your contributions in meetings. You are often the one saying what the rest of us are thinking, and that is so very valuable. Your unique blend of passion, humor, mentorship, and advocacy will be sorely missed. I wish you all the best and hope to stay in touch!" },
+  { name: "Mickens",  msg: "I'm so glad that our paths crossed at the random conference in DC and that you were able to come to ASML! It was great to see you do so well in your own projects while contributing so much to a positive and fun environment in the lab overall. I hope—nay, I fully expect and demand—that our paths shall cross again :-D." },
+  { name: "Cruz",     msg: "You will be missed! Please let me know when you are in Boston for some A4Cade and Sega Dreamcast." },
+  { name: "Nora",     msg: "Darius! It's always a pleasure to pick your brain, and your voice of reason is appreciated in every meeting. I hope we get the chance to properly work together on a project someday, but until then, enjoy a well-deserved vacation in standards land." },
+  { name: "Sam",      msg: "Incredibly grateful for your mentorship and friendship. Kindness permeates everything you do. It's been an absolute joy working with you, let's make sure it happens again." },
+  { name: "Alice",    msg: "Darius, thank you for being a wonderful teammate and working your magic on so many incredible projects! I'm grateful to have worked with you at ASML this past year, and I look forward to following your work and art in the fediverse and beyond." },
   { name: "Jay",      msg: "I'm very lucky to have had the opportunity to work alongside such a smart, caring, and funny individual. Thanks for being who you are, and best of luck to you and your partners in this new chapter of life. You will be missed!" },
 ];
 
